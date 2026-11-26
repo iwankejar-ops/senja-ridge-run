@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Senja Ridge Run — a sunset valley flight game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #1c1838;
+  }
+  #game {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    cursor: crosshair;
+  }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script>
+  // Collect page errors for the automated play-test driver.
+  window.__errors = [];
+  window.addEventListener('error', (event) => window.__errors.push(String(event.message)));
+</script>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
